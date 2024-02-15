@@ -16,7 +16,6 @@ interface ResultCardProps {
 
 export function ResultCard ({data}: ResultCardProps) {
   
-  console.log(data.isLive)
   
   return (
         <Link href={`/${data.user.username}`}>

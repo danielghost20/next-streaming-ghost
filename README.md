@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GHOSTREAM
 
-## Getting Started
+PLataforma de streaming con chat interactivo y control de usuarios
 
-First, run the development server:
+![Ejemplo de Interfaz de Usuario](/public/readme/stream-ghost.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Descripción
+
+El proyecto ghostream es una plataforma de streaming desarrollada con el objetivo de ofrecer una experiencia completa para los usuarios que deseen transmitir contenido en vivo. Con una combinación de tecnologías como LiveKit, Next.js, Clerck, Prisma y Vercel, nuestra plataforma proporciona una solución robusta y escalable para la gestión de usuarios, interacción en tiempo real a través de un chat interactivo, y la capacidad de gestionar y bloquear usuarios según sea necesario.
+
+## Características Principales
+
+- **Gestión de Usuarios:** Permite a los usuarios registrarse, iniciar sesión y gestionar su cuenta.
+- **Chat Interactivo:** Facilita la comunicación en tiempo real entre los usuarios que participan en la transmisión.
+- **Bloqueo de Usuarios:** Ofrece la capacidad de bloquear usuarios problemáticos para mantener un entorno seguro y positivo.
+
+## Tecnologías Utilizadas
+
+- [LiveKit](https://livekit.io/): Breve descripción de LiveKit.
+- [Next.js](https://nextjs.org/): Breve descripción de Next.js.
+- [Clerck](https://clerk.com/): Breve descripción de Clerck.
+- [Prisma](https://www.prisma.io/): Breve descripción de Prisma.
+- [Vercel](https://vercel.com): Breve descripción de Vercel.
+
+## Instalación
+
+1. Clona este repositorio: `git clone https://github.com/ghostdev21/next-streaming-ghost`
+2. Instala las dependencias: `pnpm install`
+3. Configura las variables de entorno.
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+CLERK_WEBHOOK_SECRET
+
+
+# This was inserted by `prisma init`:
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+DATABASE_URL
+
+LIVEKIT_API_URL
+LIVEKIT_API_KEY
+LIVEKIT_API_SECRET
+NEXT_PUBLIC_LIVEKIT_WS_URL
+UPLOADTHING_SECRET
+UPLOADTHING_APP_ID
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contribución
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Si deseas contribuir a este proyecto, sigue los siguientes pasos:
 
-## Learn More
+1. Haz un fork del repositorio.
+2. Crea una nueva rama: `git checkout -b feature/nueva-caracteristica`.
+3. Haz tus cambios y commitea: `git commit -am 'Agrega una nueva característica'`.
+4. Sube tus cambios: `git push origin feature/nueva-caracteristica`.
+5. Abre un Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
+## Licencia
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contacto
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Si tienes alguna pregunta o comentario, puedes contactarme a través de [correo electrónico](mailto:daniel21develop@gmail.com) o [Twitter](https://twitter.com/ghostDRM21).
